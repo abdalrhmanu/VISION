@@ -1,0 +1,236 @@
+
+.no-browser-support {
+    display: none;
+    font-size: 1.2rem;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 15%;
+}
+
+#charDiv p {
+    font-family: Cambria, Georgia, serif;
+    font-weight: bold;
+    text-align: center;
+    line-height: 400px;
+    padding-top: 30px;
+}
+
+
+#logs p {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+
+body {
+    background-color: #fff;
+    font: 14px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    color: #595959;
+    font-weight: 400;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    color: #fff;
+    background-color: #080011;
+    background-image: linear-gradient(to bottom, #030106, #040109, #05010c, #07000f, #080011);
+    /* background-image: linear-gradient(to bottom, #800000, #990003, #b30003, #ce0002, #e90000); */
+    /* background-image: linear-gradient(to left top, #ffffff, #f6f4ff, #efe8ff, #e8dcff, #e2d0ff); */
+    background-position: 10%, 30%, 50%, 70%, 90%, 0;
+    background-size: 4px auto, 2px auto, 2px auto, 2px auto, 2px auto, 100% auto;
+    background-attachment: fixed;
+    text-align: justify;
+}
+
+/*button*/
+.btn {
+    border: none;
+    background-color: inherit;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+}
+.btnStart{
+    box-shadow: 0 4px 27px #5C5864;
+    background: #E7E7E7;
+    color: #000;
+}
+
+/* On mouse-over */
+.btn:hover {
+    background: #F5E1EE;
+}
+
+/*button*/
+
+
+.logo {
+    margin: 19px;
+    display: block;
+    text-align: center;
+}
+
+.header {
+    position: absolute;
+    display: block;
+    height: 80px;
+    width: 100%;
+    background-color: #030106;
+}
+
+#landingPage {
+    position: relative;
+    top: 70px;
+    padding: 40px;
+
+}
+
+#landingPage h3{
+    margin: 20px auto 20px auto;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+#scoreDiv {
+    position: relative;
+    top: 110px;
+    padding: 30px;
+}
+#warnings {
+    position: fixed;
+    padding-left: 0px;
+    padding-right: 10px;
+    bottom: 10px;
+}
+
+#instructions{
+    padding: 10px;
+    font-size: 18px;
+}
+
+/* Chatbot */
+.orb {
+    /* display: none; */
+    position: fixed;
+    bottom: 60px;
+    right: 60px ;
+    animation:spin 4s linear infinite;
+    width: 110px;
+    height: 110px;
+    margin-top: 140px;
+    border-radius: 50%;
+    box-shadow:
+        inset 0 0 50px #fff,
+        inset 20px 0 60px violet,
+        inset -20px 0 60px #0ff,
+        inset 20px 0 300px violet,
+        inset -20px 0 300px #0ff,
+        0 0 50px #fff,
+        -10px 0 60px violet,
+        10px 0 60px #0ff;
+}
+
+.orb:hover{
+    box-shadow: inset 0px 0px 40px #fff, inset 20px 0 60px violet, inset -20px 0 60px #0ff, inset 20px 0 300px violet, inset -20px 0 300px #0ff, 0 0 50px #fff, -10px 0 60px violet, 10px 0 60px #0ff;
+}
+
+.chatbot-container{
+    display: none;
+}
+
+.bot-msg{
+    position: fixed;
+    word-wrap: break-word;
+    right: 130px;
+    bottom: 150px;
+    color: #fff;
+    text-align: center;
+    width: 200px;
+    height: auto;
+    padding: 0 20px;
+    margin: auto;
+    min-height: 50px;
+    min-width: 230px;
+    background-color: #200f30;
+    border-radius: 25px;
+    z-index: 3;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+
+.bot-msg p{
+    display: block;
+    margin: revert;
+    font-size: 16px;
+    font-family: cursive, monospace;
+}
+
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media(max-width:576px){
+    #landingPage h1{
+        font-size: 25px;
+    } 
+    #landingPage h3{
+        font-size: 19px;
+    }
+    ul{
+        font-size: 15px;
+        padding: 0;
+    }
+    .no-browser-support{
+        font-size: 14px;
+        bottom: 4%;
+        line-height: 24px;
+    }
+    #warnings{
+        position: fixed;
+        bottom: 30px;
+        left: 10%;
+        right: 10%;
+    }
+    #scoreUser{
+        text-align: left;
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+}
