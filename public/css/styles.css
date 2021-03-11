@@ -1,4 +1,24 @@
+body {
+    background-color: #fff;
+    font: 14px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    color: #595959;
+    font-weight: 400;
+}
 
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    color: #fff;
+    background-color: #080011;
+    background-image: linear-gradient(to bottom, #030106, #040109, #05010c, #07000f, #080011);
+    /* background-image: linear-gradient(to bottom, #800000, #990003, #b30003, #ce0002, #e90000); */
+    /* background-image: linear-gradient(to left top, #ffffff, #f6f4ff, #efe8ff, #e8dcff, #e2d0ff); */
+    background-position: 10%, 30%, 50%, 70%, 90%, 0;
+    background-size: 4px auto, 2px auto, 2px auto, 2px auto, 2px auto, 100% auto;
+    background-attachment: fixed;
+    text-align: justify;
+}
 .no-browser-support {
     display: none;
     font-size: 1.2rem;
@@ -24,30 +44,7 @@
     font-weight: bold;
 }
 
-
-body {
-    background-color: #fff;
-    font: 14px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    color: #595959;
-    font-weight: 400;
-}
-
-html, body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    color: #fff;
-    background-color: #080011;
-    background-image: linear-gradient(to bottom, #030106, #040109, #05010c, #07000f, #080011);
-    /* background-image: linear-gradient(to bottom, #800000, #990003, #b30003, #ce0002, #e90000); */
-    /* background-image: linear-gradient(to left top, #ffffff, #f6f4ff, #efe8ff, #e8dcff, #e2d0ff); */
-    background-position: 10%, 30%, 50%, 70%, 90%, 0;
-    background-size: 4px auto, 2px auto, 2px auto, 2px auto, 2px auto, 100% auto;
-    background-attachment: fixed;
-    text-align: justify;
-}
-
-/*button*/
+/*button */
 .btn {
     border: none;
     background-color: inherit;
@@ -66,9 +63,6 @@ html, body {
 .btn:hover {
     background: #F5E1EE;
 }
-
-/*button*/
-
 
 .logo {
     margin: 19px;

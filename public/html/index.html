@@ -6,9 +6,14 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shoelace-css/1.0.0-beta16/shoelace.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="../images/favicon-16x16.png" />
+
+    <link rel="stylesheet" href="../css/styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>VISION - Test your vision</title>
+
+    <meta property="og:title" content="VISION" />
+    <meta property="og:description" content="An online platform that assist you in estimating your visual acuity from your home." />
 </head>
 
 <body>
@@ -21,14 +26,6 @@
             would like to give you some instructions.</h3>
         <div id="instructions">
             <ul>
-                <!-- <li>During the test, be seated 10 feet away from the computer screen</li>
-                <li>Ensure the computer is at eye level</li>
-                <li>Ensure access to your microphone has been enabled for your browser</li>
-                <li>If the chart seems too dark or too bright, adjust computer brightness accordingly</li>
-                <li>Speak loudly and clearly enunciate each letter you see</li>
-                <li>Wait a few seconds until the letter has fully appeared before speaking</li>
-                
-                <li>For more precise results, test each eye separately</li> -->
                 <li>This test is conducted to estimate your visual acuity.</li>
                 <li>This test is depending on your audio instructions, make sure to speak loudly and clearly.</li>
                 <li>Test each eye separately by covering the other.</li>
@@ -44,7 +41,7 @@
     </div>
     <div id="testing">
         <div id="charDiv">
-            <p id="char" style="font-family: Cambria, Georgia, serif;">char</p>
+            <p id="char" style="font-family: Cambria, Georgia, serif;"></p>
         </div>
         <!-- <div id="logs">-->
         <!--<p id="recording">recording status: not recording</p>-->
@@ -83,7 +80,7 @@
         </h3>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="script.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>

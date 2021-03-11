@@ -1,0 +1,22 @@
+{
+  "name": "vision",
+  "version": "1.0.0",
+  "description": "An online application that assist you in estimating your visual acuity from your home.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abdalrhmanu/VISION.git"
+  },
+  "author": "ABDELRAHMAN USAMA",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abdalrhmanu/VISION/issues"
+  },
+  "homepage": "https://github.com/abdalrhmanu/VISION#readme",
+  "dependencies": {
+    "obscure": "^1.0.1"
+  }
+}
